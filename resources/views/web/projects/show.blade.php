@@ -28,7 +28,7 @@
             </div>
             <div class="portfolio-details-container">
 
-                <img src="{{@Storage::disk('public')->url('app/public/images/projects/'. $project->image)}}"
+                <img src="{{@Storage::disk('public')->url('images/projects/'. $project->image)}}"
                      class="img-fluid" style="width: 100% !important;" alt="">
             </div>
 

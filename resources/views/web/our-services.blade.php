@@ -129,7 +129,6 @@
         <div class="container" data-aos="fade-up">
             <div class="section-header">
                 <h3>Remotely monitoring and operating system</h3>
-                <p>We develop systems for our customers both as consultants and as turn-key system providers. Out systems give.</p>
             </div>
             <p class="text-center" style="font-size: 18px">
                 We offer the ability to measure data such as position, water level, speed, temperature, wind etc - even in locations lacking power and communications facilities - through
@@ -143,7 +142,7 @@
                 <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
                     <img
                         src="{{asset('images/remotely.jpg')}}"
-                        class="img-fluid" alt="">
+                        class="img-fluid" alt="" style="    max-height: 306px; width: 100%; object-fit: cover;">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content" data-aos="fade-right"
                      data-aos-delay="100">
@@ -165,7 +164,6 @@
         <div class="container" data-aos="fade-up">
             <div class="section-header">
                 <h3>Supply</h3>
-                <p>We develop systems for our customers both as consultants and as turn-key system providers. Out systems give.</p>
             </div>
             <p class="text-center" style="font-size: 18px">
                 The procurement and supply department in our company works to supply the company and clients with all the raw materials it needs in its projects in the event that it is import,
@@ -182,7 +180,7 @@
                      data-aos-delay="100">
                     <img
                         src="{{asset('images/supply2.jpg')}}"
-                        class="img-fluid" alt="">
+                        class="img-fluid" alt="" style="    max-height: 405px;width: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -197,8 +195,7 @@
         <br>
         <div class="container" data-aos="fade-up">
             <div class="section-header">
-                <h3>Remotely monitoring and operating system</h3>
-                <p>We develop systems for our customers both as consultants and as turn-key system providers. Out systems give.</p>
+                <h3>Water Resources</h3>
             </div>
             <p class="text-center" style="font-size: 18px">
                 Our water cycle approach to solving water resources challenges means that customers get solutions that look at the big picture and harness the power of their native water.

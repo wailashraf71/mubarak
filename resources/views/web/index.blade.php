@@ -189,6 +189,38 @@
     <br>
     <br>
     <br>
+
+    <section id="partners">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container" data-aos="zoom-in">
+
+            <header class="section-header">
+                <h3>Showcase</h3>
+            </header>
+            <br>
+            <div class="owl-carousel owl-theme home-images">
+                <img src="{{asset('images/showcase/1.jpg')}}" alt="">
+                <img src="{{asset('images/showcase/2.jpg')}}" alt="">
+                <img src="{{asset('images/showcase/3.jpg')}}" alt="">
+                <img src="{{asset('images/showcase/4.jpg')}}" alt="">
+                <img src="{{asset('images/showcase/5.jpg')}}" alt="">
+                <img src="{{asset('images/showcase/6.jpg')}}" alt="">
+                <img src="{{asset('images/showcase/7.jpg')}}" alt="">
+            </div>
+
+            <br>
+            <br>
+            <br>
+        </div>
+    </section><!-- End Our Clients Section -->
+
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 

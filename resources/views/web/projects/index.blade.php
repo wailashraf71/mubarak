@@ -44,8 +44,8 @@
                     <div class="col-lg-4 col-md-6 portfolio-item {{$project->type}}">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="{{@Storage::disk('public')->url('app/public/images/projects/'. $project->image)}}" class="img-fluid" alt="">
-                                <a href="{{@Storage::disk('public')->url('app/public/images/projects/'. $project->image)}}" data-lightbox="portfolio" data-title="App 1"
+                                <img src="{{@Storage::disk('public')->url('images/projects/'. $project->image)}}" class="img-fluid" alt="">
+                                <a href="{{@Storage::disk('public')->url('images/projects/'. $project->image)}}" data-lightbox="portfolio" data-title="App 1"
                                    class="link-preview"><i class="ion ion-eye"></i></a>
                                 <a href="{{url('/projects/' . $project->id)}}" class="link-details" title="More Details"><i
                                         class="ion ion-android-open"></i></a>

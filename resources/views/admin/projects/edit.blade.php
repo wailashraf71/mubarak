@@ -47,7 +47,7 @@
                             <input type="file" class="image-upload" id="photo" name="photo" accept="image/*">
                         </div>
                         <div id="image-preview" style="width: 350px;">
-                            <img src="{{@Storage::disk('public')->url('app/public/images/projects/'. $project->image)}}" style="margin-top:20px">
+                            <img src="{{@Storage::disk('public')->url('images/projects/'. $project->image)}}" style="margin-top:20px">
                         </div>
                     </div>
                 </div>

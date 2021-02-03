@@ -7,7 +7,7 @@
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
                 <a class="navbar-brand header" href="{{route('admin.dashboard')}}"><img
                         src="{{asset('images/logo.png')}}" style="width: 40px" alt="" class="img-fluid"><span
-                        class="logo">  Al-Mubarak Group </span></a>
+                        class="logo">  Al-Mubarak Int Group </span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">

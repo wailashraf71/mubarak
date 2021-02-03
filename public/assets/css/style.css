@@ -1702,3 +1702,7 @@ section {
     text-overflow: ellipsis;
     width: 100%;
 }
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 50px !important;
+}

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Al-Mubarak Group</title>
+    <title>Al-Mubarak Int Group</title>
     <link href="{{asset('images/favicon.png')}}" rel="icon">
     <link href="{{asset('images/favicon.png')}}" rel="apple-touch-icon">
     <link
@@ -22,6 +22,7 @@
     <link href="{{asset("assets/vendor/aos/aos.css")}}" rel="stylesheet">
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <!-- Vendor CSS Files -->
 
     <style>
@@ -44,7 +45,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-11 d-flex align-items-center">
                 <h1 class="logo mr-auto"><a href="{{route('home')}}"><img src="{{asset('images/logo.png')}}" alt=""
-                                                                          class="img-fluid"> Al-Mubarak Group</a></h1>
+                                                                          class="img-fluid"> Al-Mubarak Int Group</a></h1>
 
                 <nav class="nav-menu d-none d-lg-block">
                     <ul>
@@ -103,7 +104,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-info footer-contact">
-                    <h3>Al-Mubarak Group</h3>
+                    <h3>Al-Mubarak Int Group</h3>
                     <p>
                         Al AASAM Building,<br>
                         Baghdad, Iraq<br>
@@ -166,7 +167,7 @@
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong>Al-Mubarak Group</strong>. All Rights Reserved
+            &copy; Copyright <strong>Al-Mubarak Int Group</strong>. All Rights Reserved
         </div>
     </div>
 </footer><!-- End Footer -->

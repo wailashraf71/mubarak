@@ -11,7 +11,7 @@
                 <div class="card card-bordered" style="overflow: hidden">
                     <a href="{{ route('admin.projects.edit', ['project' => $project->id])}}">
                         <div class="card-block"
-                             style="height: 270px;background-image: url({{@Storage::disk('public')->url('images/projects/'. $project->image)}});background-size: cover;background-position: center;">
+                             style="height: 270px;background-image: url({{@Storage::disk('public')->url('images/projects/'. json_decode($project->image)[0])}});background-size: cover;background-position: center;">
                         </div>
                     </a>
                     <div class="p-3 card-body">

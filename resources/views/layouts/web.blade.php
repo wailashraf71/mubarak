@@ -149,7 +149,7 @@
 
                 <div class="col-lg-1 col-md-6"></div>
 
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-3 col-md-6 px-5 footer-links">
                     <h4>Our Services</h4>
                     <ul>
                         <li><i class="ion-ios-arrow-right"></i><a href="{{url('/our-services#infrastructure')}}">1 - Infrastructure</a></li>

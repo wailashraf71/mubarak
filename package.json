@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "blueimp-file-upload": "^10.31.0",
         "bootstrap-select": "^1.13.18",
         "jquery-image-reader": "^1.0.0",
         "jquery-ui": "^1.12.1",

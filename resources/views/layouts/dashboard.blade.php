@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('meta')
+    @yield('style')
+@endsection
+
 @section('spa')
     <div class="dashboard-main-wrapper">
         <!-- navbar -->

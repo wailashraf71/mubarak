@@ -23,29 +23,16 @@
             <header class="section-header">
                 <h3 class="section-title">Our Projects</h3>
             </header>
-
-            <div class="row" data-aos="fade-up" data-aos-delay="100">
-                <div class=" col-lg-12">
-                    <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".infrastructure">Infrastructure</li>
-                        <li data-filter=".Mechanical">Mechanical</li>
-                        <li data-filter=".Electrical">Electrical</li>
-                        <li data-filter=".Monitoring">Monitoring</li>
-                        <li data-filter=".Supply">Supply</li>
-                        <li data-filter=".Water Resources">Water Resources</li>
-                    </ul>
-                </div>
-            </div>
+            
 
             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
                 @foreach($projects as $project)
-                    <div class="col-lg-4 col-md-6 portfolio-item {{$project->type}}">
+                    <div class="col-lg-4 col-md-6 portfolio-item *">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="{{@Storage::disk('public')->url('images/projects/'. $project->image)}}" class="img-fluid" alt="">
-                                <a href="{{@Storage::disk('public')->url('images/projects/'. $project->image)}}" data-lightbox="portfolio" data-title="App 1"
+                                <img src="{{@Storage::disk('public')->url('images/projects/'. json_decode($project->image)[0])}}" class="img-fluid" alt="">
+                                <a href="{{@Storage::disk('public')->url('images/projects/'. json_decode($project->image)[0])}}" data-lightbox="portfolio" data-title="App 1"
                                    class="link-preview"><i class="ion ion-eye"></i></a>
                                 <a href="{{url('/projects/' . $project->id)}}" class="link-details" title="More Details"><i
                                         class="ion ion-android-open"></i></a>

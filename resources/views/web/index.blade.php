@@ -11,41 +11,48 @@
 
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active"
-                         style="background-image: url('https://images.pexels.com/photos/434709/pexels-photo-434709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+                         style="background-image: url('{{asset('images/slider/1.jpg')}}')">
 
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Mubarak Int. Construction</h2>
-                                <p class="animate__animated animate__fadeInUp">Mubarak Int. Construction is a customer-focused general
+                                <p class="animate__animated animate__fadeInUp">Mubarak Int. Construction is a
+                                    customer-focused general
                                     contractor dedicated to providing a comprehensive range of construction and
                                     civil engineering services to clients. Team relationships are
                                     established with each customer in order to help them meet their business
                                     objectives.</p>
                                 <a href="#services"
-                                   class="btn-get-started scrollto animate__animated animate__fadeInUp">Supplying Department</a>
+                                   class="btn-get-started scrollto animate__animated animate__fadeInUp">Supplying
+                                    Department</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item"
-                         style="background-image: url('https://images.pexels.com/photos/544965/pexels-photo-544965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+                         style="background-image: url('{{asset('images/slider/2.jpg')}}')">
 
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Our Approach</h2>
-                                <p class="animate__animated animate__fadeInUp">Combining knowledge and expertise with the latest design software and manufacturing equipment, we enable our clients to build efficient, high-quality buildings, faster.
-                                    <br> we apply in- depth building and design experience to ensure you a rewarding and personalized process from start to finish.</p>
+                                <p class="animate__animated animate__fadeInUp">Combining knowledge and expertise with
+                                    the latest design software and manufacturing equipment, we enable our clients to
+                                    build efficient, high-quality buildings, faster.
+                                    <br> we apply in- depth building and design experience to ensure you a rewarding and
+                                    personalized process from start to finish.</p>
                                 <a href="#features"
                                    class="btn-get-started scrollto animate__animated animate__fadeInUp">More Info</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item"
-                         style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+                         style="background-image: url('{{asset('images/slider/3.jpg')}}')">
 
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Vision</h2>
-                                <p class="animate__animated animate__fadeInUp">We are genuinely passionate about your vision, and deeply engaged in how you will live in your home. The real magic of our work is aligning your goals to building realities and budget.</p>
+                                <p class="animate__animated animate__fadeInUp">We are genuinely passionate about your
+                                    vision, and deeply engaged in how you will live in your home. The real magic of our
+                                    work is aligning your goals to building realities and budget.</p>
                                 <a href="{{url('/contact')}}"
                                    class="btn-get-started scrollto animate__animated animate__fadeInUp">Say hello!</a>
                             </div>
@@ -53,24 +60,33 @@
                     </div>
 
                     <div class="carousel-item"
-                         style="background-image: url('https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+                         style="background-image: url('{{asset('images/slider/4.jpg')}}')">
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Partnership</h2>
-                                <p class="animate__animated animate__fadeInUp">We focus on building enduring relationships by delivering an enjoyable and personalized custom building experience to each of our clients. As a family-owned firm, we strive to serve as trusted partners and advisors from our first discussions until well after construction is complete.</p>
+                                <p class="animate__animated animate__fadeInUp">We focus on building enduring
+                                    relationships by delivering an enjoyable and personalized custom building experience
+                                    to each of our clients. As a family-owned firm, we strive to serve as trusted
+                                    partners and advisors from our first discussions until well after construction is
+                                    complete.</p>
                                 <a href="{{url('/about-us#partners')}}"
                                    class="btn-get-started scrollto animate__animated animate__fadeInUp">Our Partners</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item"
-                         style="background-image: url('https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+                         style="background-image: url('{{asset('images/slider/5.jpg')}}')">
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Awards & Recognition</h2>
-                                <p class="animate__animated animate__fadeInUp">Our firm has received multiple awards for the quality of our work, spanning craftsmanship, historical restoration, interior design, sustainable building, and teamwork. We’re proud of what we’ve accomplished in collaboration with our clients and project partners and honored that our work has been distinguished for excellence within the industry.</p>
+                                <p class="animate__animated animate__fadeInUp">Our firm has received multiple awards for
+                                    the quality of our work, spanning craftsmanship, historical restoration, interior
+                                    design, sustainable building, and teamwork. We’re proud of what we’ve accomplished
+                                    in collaboration with our clients and project partners and honored that our work has
+                                    been distinguished for excellence within the industry.</p>
                                 <a href="{{url('/certificates')}}"
-                                   class="btn-get-started scrollto animate__animated animate__fadeInUp">Our Certificates</a>
+                                   class="btn-get-started scrollto animate__animated animate__fadeInUp">Our
+                                    Certificates</a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +116,10 @@
 
             <header class="section-header wow fadeInUp">
                 <h3>Supplying Department</h3>
-                <p>Our supplying dept has supplied KBR in Babylon & Baghdad with Mechanical & Electrical materials, building equipments. our department has supplied KBR with flooring covering and all floors covering material. Drinking water to the Iraqi Market. MIG have the capacity to supply all requirements to all potential clients includes but not limited to:</p>
+                <p>Our supplying dept has supplied KBR in Babylon & Baghdad with Mechanical & Electrical materials,
+                    building equipments. our department has supplied KBR with flooring covering and all floors covering
+                    material. Drinking water to the Iraqi Market. MIG have the capacity to supply all requirements to
+                    all potential clients includes but not limited to:</p>
             </header>
 
             <div class="row">
@@ -212,15 +231,9 @@
             </div>
 
             <br>
-            <br>
-            <br>
         </div>
     </section><!-- End Our Clients Section -->
 
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
 

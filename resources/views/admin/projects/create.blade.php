@@ -18,31 +18,14 @@
                     <textarea class="form-control" id="description" name="description" rows="5"
                               placeholder="Describe project details in here" required></textarea>
                 </div>
+                <input type="hidden" name="type" value="all">
+
                 <div class="form-group">
-                    <label for="type">Type</label>
-                    <div class="">
-                        <div class="categories mCustomScrollbar _mCS_6"
-                             data-rel="scroll"
-                             data-scrollheight="200">
-                        </div>
-                        <select id="type" name="type"
-                                class="selectpicker text-left">
-                            <option selected disabled>Please select</option>
-                            <option value="Infrastructure">Infrastructure</option>
-                            <option value="Mechanical">Mechanical</option>
-                            <option value="Electrical">Electrical</option>
-                            <option value="Monitoring">Monitoring</option>
-                            <option value="Supply">Supply</option>
-                            <option value="Water Resources">Water Resources</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="photo">Photo</label>
+                    <label for="photo">Photos</label>
                     <div class="drop">
                         <div class="uploader">
-                            <label class="drop-label">Drag and drop an image or browse image</label>
-                            <input type="file" class="image-upload" id="photo" name="photo" accept="image/*" required>
+                            <label class="drop-label">Drag and drop images or browse images</label>
+                            <input type="file" class="image-upload" id="photo" name="photo[]" accept="image/*" multiple required>
                         </div>
                         <div id="image-preview" style="width: 350px;"></div>
                     </div>

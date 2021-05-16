@@ -54,12 +54,16 @@ class ProjectController extends Controller
         $project->description = $request->description;
         $project->type = $request->type;
 
-        $imageName = time() . uniqid() . '.webp';
-        $thumb = Image::make($request->file('photo'));
-        $thumb_large = $thumb->widen(1000)->encode('webp');
-        Storage::disk('local')->put('public/images/projects/' . $imageName, $thumb_large);
+        $photos = array();
+        foreach ($request->file('photo') as $photo){
+            $imageName = time() . uniqid() . '.webp';
+            $thumb = Image::make($photo->getRealPath());
+            $thumb_large = $thumb->encode('webp');
+            Storage::disk('local')->put('public/images/projects/' . $imageName, $thumb_large);
+            array_push($photos, $imageName);
+        }
 
-        $project->image = $imageName;
+        $project->image = json_encode($photos);
         $project->save();
 
         return redirect(route('admin.projects.index'))->with('message', 'Project created successfully');
@@ -99,20 +103,26 @@ class ProjectController extends Controller
     public function update(Request $request, $id)
     {
         $project = Project::findOrFail($id);
-        $imageName = $project->image;
+        $oldImages = $project->image;
         if ($request->file('photo') != null) {
-            Storage::disk('local')->delete('public/images/projects/' . $imageName);
+            foreach (json_decode($oldImages) as $imageToBeDeleted) {
+                Storage::disk('local')->delete('public/images/projects/' . $imageToBeDeleted);
+            }
+            $photos = array();
+            foreach ($request->file('photo') as $photo) {
+                $imageName = time() . uniqid() . '.webp';
+                $thumb = Image::make($photo->getRealPath());
+                $thumb_large = $thumb->encode('webp');
+                Storage::disk('local')->put('public/images/projects/' . $imageName, $thumb_large);
+                array_push($photos, $imageName);
+            }
 
-            $imageName = time() . uniqid() . '.webp';
-            $thumb = Image::make($request->file('photo'));
-            $thumb_large = $thumb->widen(1000)->encode('webp');
-            Storage::disk('local')->put('public/images/projects/' . $imageName, $thumb_large);
+            $oldImages = json_encode($photos);
         }
-        $project->update(["title" => $request->title, "image" => $imageName, "description" => $request->description, "type" => $request->type]);
+            $project->update(["title" => $request->title, "image" => $oldImages, "description" => $request->description, "type" => $request->type]);
 
-        return redirect()->back()->with('message', 'Project updated successfully');
-
-    }
+            return redirect()->back()->with('message', 'Project updated successfully');
+        }
 
     /**
      * Remove the specified resource from storage.
@@ -124,6 +134,9 @@ class ProjectController extends Controller
     {
         $project = Project::findOrFail($id);
         $project->delete();
+        foreach (json_decode($project->image) as $imageToBeDeleted) {
+            Storage::disk('local')->delete('public/images/projects/' . $imageToBeDeleted);
+        }
         return redirect()->back()->with('message', 'Project deleted successfully');
     }
 }

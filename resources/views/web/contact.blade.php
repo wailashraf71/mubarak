@@ -30,7 +30,7 @@
 
                 <div class="col-md-4">
                     <div class="contact-address">
-                        <i class="ion-ios-location-outline"></i>
+                        <i class="ion-ios-flag-outline"></i>
                         <h3>Address</h3>
                         <address>Al AASAM Building, Baghdad, Iraq</address>
                     </div>

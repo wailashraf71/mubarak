@@ -16,11 +16,10 @@
     <link href="{{asset('assets/admin/vendor/fonts/circular-std/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/admin/libs/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/admin/vendor/fonts/fontawesome/css/fontawesome-all.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/vendor/charts/chartist-bundle/chartist.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/vendor/charts/morris-bundle/morris.css')}}">
     <link rel="stylesheet" href="{{asset('assets/admin/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/admin/vendor/charts/c3charts/c3.css')}}">
     <link rel="stylesheet" href="{{asset('assets/admin/vendor/fonts/flag-icon-css/flag-icon.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.6/dropzone.min.css" integrity="sha512-jU/7UFiaW5UBGODEopEqnbIAHOI8fO6T99m7Tsmqs2gkdujByJfkCbbfPSN4Wlqlb9TGnsuC0YgUgWkRBK7B9A==" crossorigin="anonymous" />
     <style>
 
         .drop {
@@ -162,14 +161,7 @@
 <script src="{{asset('assets/admin/vendor/charts/chartist-bundle/chartist.min.js')}}"></script>
 <!-- sparkline js -->
 <script src="{{asset('assets/admin/vendor/charts/sparkline/jquery.sparkline.js')}}"></script>
-<!-- morris js -->
-<script src="{{asset('assets/admin/vendor/charts/morris-bundle/raphael.min.js')}}"></script>
-<script src="{{asset('assets/admin/vendor/charts/morris-bundle/morris.js')}}"></script>
-<!-- chart c3 js -->
-<script src="{{asset('assets/admin/vendor/charts/c3charts/c3.min.js')}}"></script>
-<script src="{{asset('assets/admin/vendor/charts/c3charts/d3-5.4.0.min.js')}}"></script>
-<script src="{{asset('assets/admin/vendor/charts/c3charts/C3chartjs.js')}}"></script>
-<script src="{{asset('assets/admin/libs/js/dashboard-ecommerce.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.6/min/dropzone.min.js" integrity="sha512-KgeSi6qqjyihUcmxFn9Cwf8dehAB8FFZyl+2ijFEPyWu4ZM8ZOQ80c2so59rIdkkgsVsuTnlffjfgkiwDThewQ==" crossorigin="anonymous"></script>
 @yield('scripts')
 </body>
 </html>

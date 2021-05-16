@@ -27,9 +27,12 @@
                 </p>
             </div>
             <div class="portfolio-details-container">
-
-                <img src="{{@Storage::disk('public')->url('images/projects/'. $project->image)}}"
-                     class="img-fluid" style="width: 100% !important;" alt="">
+                @foreach(json_decode($project->image) as $image)
+                    <img src="{{@Storage::disk('public')->url('images/projects/'. $image)}}"
+                         class="img-fluid" style="width: 100% !important;" alt="">
+                    <br>
+                    <hr>
+                @endforeach
             </div>
 
             <br>

@@ -18,7 +18,7 @@ class CreateProjectsTable extends Migration
             $table->string('title');
             $table->text('description')->nullable();
             $table->string('type')->default('all');
-            $table->text('image')->default('project.jpg');
+            $table->string('image')->default('project.jpg');
             $table->softDeletes();
             $table->timestamps();
         });
